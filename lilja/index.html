@@ -4,15 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daze Nettoyage - Professional Cleaning Services</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Inter Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <!-- Animate.css for animations -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
@@ -24,25 +20,25 @@
             overflow-x: hidden;
         }
 
-        /* Orange accent color for cleaning services */
-        .accent-orange {
-            color: #F97316;
+        /* Blue accent color for cleaning services */
+        .accent-blue {
+            color: #2563EB; /* blue-600 */
         }
-        .bg-accent-orange {
-            background-color: #F97316;
+        .bg-accent-blue {
+            background-color: #2563EB;
         }
-        .border-accent-orange {
-            border-color: #F97316;
+        .border-accent-blue {
+            border-color: #2563EB;
         }
-        .hover-bg-accent-orange:hover {
-            background-color: #EA580C;
+        .hover-bg-accent-blue:hover {
+            background-color: #1D4ED8; /* blue-700 */
         }
 
-        /* Orange underline style */
-        .orange-line {
+        /* Blue underline style */
+        .blue-line {
             width: 5rem; /* 80px */
             height: 2px;
-            background-color: #F97316;
+            background-color: #2563EB;
             margin-top: 0.5rem; /* 8px */
         }
         
@@ -58,8 +54,8 @@
         }
         .dark-input:focus {
             outline: none;
-            border-color: #F97316;
-            box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.5);
+            border-color: #2563EB;
+            box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.5);
         }
         
         /* Mobile menu transition */
@@ -86,7 +82,7 @@
             animation: spin 1s linear infinite;
         }
         
-        /* Star rating */
+        /* Star rating - Kept as yellow */
         .star-rating {
             color: #FBBF24;
         }
@@ -99,9 +95,9 @@
         }
         
         @keyframes pulse-glow {
-            0% { box-shadow: 0 0 5px rgba(249, 115, 22, 0.4); }
-            50% { box-shadow: 0 0 20px rgba(249, 115, 22, 0.8); }
-            100% { box-shadow: 0 0 5px rgba(249, 115, 22, 0.4); }
+            0% { box-shadow: 0 0 5px rgba(37, 99, 235, 0.4); }
+            50% { box-shadow: 0 0 20px rgba(37, 99, 235, 0.8); }
+            100% { box-shadow: 0 0 5px rgba(37, 99, 235, 0.4); }
         }
         
         @keyframes slideInFromLeft {
@@ -149,7 +145,7 @@
         
         /* Gradient text */
         .gradient-text {
-            background: linear-gradient(90deg, #F97316, #FB923C, #F97316);
+            background: linear-gradient(90deg, #2563EB, #3B82F2, #2563EB); /* blue-600, blue-500 */
             background-size: 200% 200%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -171,7 +167,7 @@
         
         .service-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 10px 25px rgba(249, 115, 22, 0.15);
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.15);
         }
         
         /* Particle background */
@@ -198,7 +194,7 @@
             left: 0;
             width: 0%;
             height: 4px;
-            background: linear-gradient(90deg, #F97316, #FB923C);
+            background: linear-gradient(90deg, #2563EB, #3B82F2);
             z-index: 1000;
             transition: width 0.3s ease;
         }
@@ -234,7 +230,7 @@
             bottom: 0;
             width: 4px;
             margin-left: -2px;
-            background: #F97316;
+            background: #2563EB;
             cursor: ew-resize;
         }
         
@@ -245,13 +241,13 @@
             height: 64px;
             margin: -32px 0 0 -32px;
             content: '\f0c9';
-            color: #F97316;
+            color: #2563EB;
             font-weight: 900;
             font-size: 36px;
             text-align: center;
             line-height: 64px;
-            background: rgba(249, 115, 22, 0.1);
-            border: 4px solid #F97316;
+            background: rgba(37, 99, 235, 0.1);
+            border: 4px solid #2563EB;
             border-radius: 50%;
             transition: all 0.3s ease;
             font-family: 'Font Awesome 6 Free';
@@ -261,7 +257,7 @@
         }
         
         .handle:hover:after {
-            background: rgba(249, 115, 22, 0.2);
+            background: rgba(37, 99, 235, 0.2);
             transform: scale(1.1);
         }
         
@@ -302,53 +298,40 @@
     </style>
 </head>
 <body class="overflow-x-hidden">
-    <!-- Scroll Progress Bar -->
     <div class="scroll-progress"></div>
     
-    <!-- Floating Background Elements -->
     <div class="floating-element top-20 left-10">
-        <i class="fas fa-spray-can text-6xl text-accent-orange"></i>
+        <i class="fas fa-spray-can text-6xl text-accent-blue"></i>
     </div>
     <div class="floating-element top-40 right-20">
-        <i class="fas fa-broom text-5xl text-accent-orange"></i>
+        <i class="fas fa-broom text-5xl text-accent-blue"></i>
     </div>
     <div class="floating-element bottom-40 left-20">
-        <i class="fas fa-hand-sparkles text-4xl text-accent-orange"></i>
+        <i class="fas fa-hand-sparkles text-4xl text-accent-blue"></i>
     </div>
     <div class="floating-element bottom-20 right-10">
-        <i class="fas fa-soap text-6xl text-accent-orange"></i>
+        <i class="fas fa-soap text-6xl text-accent-blue"></i>
     </div>
 
-    <!-- 
-      DESKTOP & TABLET SIDEBAR (Fixed)
-      Hidden on mobile, visible on lg screens and up.
-    -->
     <nav class="hidden lg:flex lg:flex-col lg:w-36 lg:fixed lg:inset-y-0 lg:z-50 bg-[#0c0c0c] border-r border-gray-800 p-6 justify-between items-center glass">
-        <!-- Top Section: Logo & Socials -->
         <div class="flex flex-col items-center space-y-8">
-            <!-- Logo -->
             <a href="#" class="text-3xl font-black text-white gradient-text">Daze</a>
             
-            <!-- Social Icons -->
             <div class="flex flex-col space-y-6">
-                <!-- Instagram -->
-                <a href="#" class="text-gray-400 hover:text-accent-orange transition-colors transform hover:scale-110">
+                <a href="#" class="text-gray-400 hover:text-accent-blue transition-colors transform hover:scale-110">
                     <i class="fab fa-instagram text-xl"></i>
                 </a>
-                <!-- LinkedIn -->
-                <a href="#" class="text-gray-400 hover:text-accent-orange transition-colors transform hover:scale-110">
+                <a href="#" class="text-gray-400 hover:text-accent-blue transition-colors transform hover:scale-110">
                     <i class="fab fa-linkedin text-xl"></i>
                 </a>
-                <!-- Facebook -->
-                <a href="#" class="text-gray-400 hover:text-accent-orange transition-colors transform hover:scale-110">
+                <a href="#" class="text-gray-400 hover:text-accent-blue transition-colors transform hover:scale-110">
                     <i class="fab fa-facebook text-xl"></i>
                 </a>
             </div>
         </div>
         
-        <!-- Bottom Section: C-T-A & Language -->
         <div class="flex flex-col items-center space-y-6">
-            <a href="#contact" class="px-6 py-3 border-2 border-accent-orange text-white font-semibold text-sm rounded-md hover:bg-accent-orange transition-all transform hover:scale-105 pulse-glow">
+            <a href="#contact" class="px-6 py-3 border-2 border-accent-blue text-white font-semibold text-sm rounded-md hover:bg-accent-blue transition-all transform hover:scale-105 pulse-glow">
                 CONTACT
             </a>
             <a href="#" class="text-gray-400 font-medium text-sm hover:text-white transition-colors">
@@ -357,53 +340,40 @@
         </div>
     </nav>
 
-    <!-- 
-      MOBILE HEADER (Fixed)
-      Visible on mobile, hidden on lg screens and up.
-    -->
     <header class="lg:hidden fixed top-0 left-0 right-0 z-40 bg-[#0c0c0c] border-b border-gray-800 p-4 flex justify-between items-center glass">
         <a href="#" class="text-2xl font-black text-white gradient-text">Daze</a>
-        <button id="menu-toggle" class="text-white p-2 hover:text-accent-orange transition-colors" aria-label="Open menu">
-            <!-- Hamburger Icon -->
+        <button id="menu-toggle" class="text-white p-2 hover:text-accent-blue transition-colors" aria-label="Open menu">
             <i id="menu-icon-open" class="fas fa-bars text-2xl"></i>
-            <!-- Close Icon (hidden by default) -->
             <i id="menu-icon-close" class="fas fa-times text-2xl hidden"></i>
         </button>
     </header>
 
-    <!-- 
-      MOBILE MENU (Full screen)
-      Hidden by default, slides in from left.
-    -->
     <div id="mobile-menu" class="lg:hidden fixed inset-0 z-50 bg-[#0c0c0c] p-6 flex flex-col justify-between menu-closed glass">
-        <!-- Top: Logo & Close Button -->
         <div class="flex justify-between items-center">
             <a href="#" class="text-2xl font-black text-white gradient-text menu-link">Daze</a>
         </div>
         
-        <!-- Middle: Navigation Links -->
         <div class="flex flex-col items-center space-y-8">
-            <a href="#about" class="text-xl font-semibold text-gray-300 hover:text-accent-orange transition-colors menu-link">About</a>
-            <a href="#services" class="text-xl font-semibold text-gray-300 hover:text-accent-orange transition-colors menu-link">Services</a>
-            <a href="#portfolio" class="text-xl font-semibold text-gray-300 hover:text-accent-orange transition-colors menu-link">Portfolio</a>
-            <a href="#testimonials" class="text-xl font-semibold text-gray-300 hover:text-accent-orange transition-colors menu-link">Testimonials</a>
-            <a href="#contact" class="text-xl font-semibold text-gray-300 hover:text-accent-orange transition-colors menu-link">Contact</a>
+            <a href="#about" class="text-xl font-semibold text-gray-300 hover:text-accent-blue transition-colors menu-link">About</a>
+            <a href="#services" class="text-xl font-semibold text-gray-300 hover:text-accent-blue transition-colors menu-link">Services</a>
+            <a href="#portfolio" class="text-xl font-semibold text-gray-300 hover:text-accent-blue transition-colors menu-link">Portfolio</a>
+            <a href="#testimonials" class="text-xl font-semibold text-gray-300 hover:text-accent-blue transition-colors menu-link">Testimonials</a>
+            <a href="#contact" class="text-xl font-semibold text-gray-300 hover:text-accent-blue transition-colors menu-link">Contact</a>
         </div>
 
-        <!-- Bottom: Socials & CTA -->
         <div class="flex flex-col items-center space-y-6">
             <div class="flex space-x-6">
-                <a href="#" class="text-white hover:text-accent-orange transition-colors menu-link">
+                <a href="#" class="text-white hover:text-accent-blue transition-colors menu-link">
                     <i class="fab fa-instagram text-2xl"></i>
                 </a>
-                <a href="#" class="text-white hover:text-accent-orange transition-colors menu-link">
+                <a href="#" class="text-white hover:text-accent-blue transition-colors menu-link">
                     <i class="fab fa-linkedin text-2xl"></i>
                 </a>
-                <a href="#" class="text-white hover:text-accent-orange transition-colors menu-link">
+                <a href="#" class="text-white hover:text-accent-blue transition-colors menu-link">
                     <i class="fab fa-facebook text-2xl"></i>
                 </a>
             </div>
-            <a href="#contact" class="px-8 py-4 border-2 border-accent-orange text-white font-semibold text-base rounded-md hover:bg-accent-orange transition-all w-full text-center menu-link pulse-glow">
+            <a href="#contact" class="px-8 py-4 border-2 border-accent-blue text-white font-semibold text-base rounded-md hover:bg-accent-blue transition-all w-full text-center menu-link pulse-glow">
                 CONTACT US
             </a>
             <a href="#" class="text-gray-400 font-medium text-base hover:text-white menu-link">
@@ -412,31 +382,20 @@
         </div>
     </div>
 
-    <!-- 
-      MAIN CONTENT AREA
-      Offset by sidebar on lg screens. Full width on mobile.
-    -->
     <main class="lg:ml-36 pt-16 lg:pt-0">
-        <!-- 
-          Section: Hero
-        -->
         <section id="hero" class="relative h-screen min-h-[700px] flex items-center justify-center text-center overflow-hidden">
-            <!-- Animated Background -->
             <div class="absolute inset-0 bg-gradient-to-br from-[#0c0c0c] via-[#111111] to-[#0c0c0c]"></div>
             
-            <!-- Floating Particles Background -->
             <div id="particles-js"></div>
             
-            <!-- Content -->
             <div class="relative z-10 p-6 flex flex-col items-center max-w-4xl mx-auto">
                 <h1 class="text-5xl md:text-7xl lg:text-8xl font-black text-white uppercase mb-6 fade-in-up">
                     We've Got It <span class="gradient-text">Cleaned.</span>
                 </h1>
-                <div class="orange-line my-6 fade-in-up" style="animation-delay: 0.2s"></div>
+                <div class="blue-line my-6 fade-in-up" style="animation-delay: 0.2s"></div>
                 <p class="text-xl md:text-2xl text-gray-200 mb-8 fade-in-up" style="animation-delay: 0.4s">
                     Professional Cleaning Services You Can Trust
                 </p>
-                <!-- Star Rating -->
                 <div class="flex items-center space-x-2 mb-8 fade-in-up" style="animation-delay: 0.6s">
                     <div class="star-rating flex">
                         <i class="fas fa-star text-2xl"></i>
@@ -448,41 +407,34 @@
                     <span class="text-gray-300 text-lg">Rated 5 stars by customers</span>
                 </div>
                 
-                <!-- CTA Buttons -->
                 <div class="flex flex-col sm:flex-row gap-4 mt-4 fade-in-up" style="animation-delay: 0.8s">
-                    <a href="#contact" class="px-8 py-4 bg-accent-orange text-white font-semibold text-lg rounded-md hover-bg-accent-orange transition-all transform hover:scale-105 shadow-lg">
+                    <a href="#contact" class="px-8 py-4 bg-accent-blue text-white font-semibold text-lg rounded-md hover-bg-accent-blue transition-all transform hover:scale-105 shadow-lg">
                         <i class="fas fa-calendar-check mr-2"></i>Book a Service
                     </a>
-                    <a href="#services" class="px-8 py-4 border-2 border-accent-orange text-white font-semibold text-lg rounded-md hover:bg-accent-orange transition-all transform hover:scale-105">
+                    <a href="#services" class="px-8 py-4 border-2 border-accent-blue text-white font-semibold text-lg rounded-md hover:bg-accent-blue transition-all transform hover:scale-105">
                         <i class="fas fa-list mr-2"></i>Our Services
                     </a>
                 </div>
             </div>
             
-            <!-- Scroll Indicator -->
             <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-                <a href="#about" class="text-gray-400 hover:text-accent-orange transition-colors">
+                <a href="#about" class="text-gray-400 hover:text-accent-blue transition-colors">
                     <i class="fas fa-chevron-down text-2xl"></i>
                 </a>
             </div>
         </section>
 
-        <!-- 
-          Section: About
-        -->
         <section id="about" class="py-24 px-6 md:px-12 lg:px-24 bg-[#111111] relative overflow-hidden">
-            <!-- Background Pattern -->
             <div class="absolute inset-0 opacity-5">
-                <div class="absolute top-0 left-0 w-64 h-64 bg-accent-orange rounded-full blur-3xl"></div>
-                <div class="absolute bottom-0 right-0 w-64 h-64 bg-accent-orange rounded-full blur-3xl"></div>
+                <div class="absolute top-0 left-0 w-64 h-64 bg-accent-blue rounded-full blur-3xl"></div>
+                <div class="absolute bottom-0 right-0 w-64 h-64 bg-accent-blue rounded-full blur-3xl"></div>
             </div>
             
             <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
-                <!-- Text Column -->
                 <div class="slide-in-left">
                     <div class="mb-8">
-                        <h2 class="text-sm font-semibold text-accent-orange uppercase tracking-widest">About Us</h2>
-                        <div class="orange-line"></div>
+                        <h2 class="text-sm font-semibold text-accent-blue uppercase tracking-widest">About Us</h2>
+                        <div class="blue-line"></div>
                     </div>
                     <h3 class="text-4xl lg:text-5xl font-bold text-white uppercase leading-tight mb-8">
                         Welcome to <span class="gradient-text">Daze Nettoyage</span>
@@ -496,29 +448,28 @@
                         </p>
                         <div class="grid grid-cols-2 gap-4 mt-8">
                             <div class="flex items-center space-x-3">
-                                <i class="fas fa-check-circle text-accent-orange text-xl"></i>
+                                <i class="fas fa-check-circle text-accent-blue text-xl"></i>
                                 <span>Eco-Friendly Products</span>
                             </div>
                             <div class="flex items-center space-x-3">
-                                <i class="fas fa-check-circle text-accent-orange text-xl"></i>
+                                <i class="fas fa-check-circle text-accent-blue text-xl"></i>
                                 <span>Fully Insured</span>
                             </div>
                             <div class="flex items-center space-x-3">
-                                <i class="fas fa-check-circle text-accent-orange text-xl"></i>
+                                <i class="fas fa-check-circle text-accent-blue text-xl"></i>
                                 <span>24/7 Support</span>
                             </div>
                             <div class="flex items-center space-x-3">
-                                <i class="fas fa-check-circle text-accent-orange text-xl"></i>
+                                <i class="fas fa-check-circle text-accent-blue text-xl"></i>
                                 <span>Satisfaction Guarantee</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Image Column -->
                 <div class="slide-in-right">
                     <div class="relative">
                         <img src="img.png" alt="Professional Cleaning Team" class="w-full h-full object-cover rounded-lg shadow-2xl">
-                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-accent-orange rounded-lg flex items-center justify-center text-white text-center p-4 shadow-xl">
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-accent-blue rounded-lg flex items-center justify-center text-white text-center p-4 shadow-xl">
                             <div>
                                 <span class="block text-3xl font-bold">2+</span>
                                 <span class="text-sm">Years Experience</span>
@@ -529,52 +480,40 @@
             </div>
         </section>
 
-        <!-- 
-          Section: Services
-        -->
         <section id="services" class="py-24 px-6 md:px-12 lg:px-24 relative overflow-hidden">
-            <!-- Background Pattern -->
             <div class="absolute inset-0 bg-gradient-to-b from-[#111111] to-[#0c0c0c]"></div>
             
             <div class="max-w-7xl mx-auto relative z-10">
                 <div class="text-center mb-16 fade-in-up">
-                    <h2 class="text-sm font-semibold text-accent-orange uppercase tracking-widest">Our Cleaning Services</h2>
-                    <div class="orange-line mx-auto mt-2"></div>
+                    <h2 class="text-sm font-semibold text-accent-blue uppercase tracking-widest">Our Cleaning Services</h2>
+                    <div class="blue-line mx-auto mt-2"></div>
                     <p class="text-gray-300 mt-6 max-w-2xl mx-auto">We offer a comprehensive range of professional cleaning services tailored to meet your specific needs and exceed your expectations.</p>
                 </div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Card 1: Maintenance Cleaning -->
-                    <div class="service-card bg-[#1a1a1a] rounded-xl p-8 border border-gray-800 hover:border-accent-orange transition-all duration-500 fade-in-up" style="animation-delay: 0.1s">
-                        <div class="w-16 h-16 bg-accent-orange rounded-full flex items-center justify-center mb-6 mx-auto">
-                            <i class="fas fa-home text-white text-2xl"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white text-center mb-4">Residential Cleaning</h3>
-                        <p class="text-gray-300 text-center mb-6">
-                            Regular maintenance cleaning for homes and apartments, keeping your living space fresh and hygienic.
-                        </p>
+                    <div class="service-card bg-[#1a1a1a] rounded-xl p-8 border border-gray-800 hover:border-accent-blue transition-all duration-500 fade-in-up" style="animation-delay: 0.1s">
+                        <div class="w-16 h-16 bg-accent-blue rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <i class="fas fa-wind text-white text-2xl"></i> </div>
+                        <h3 class="text-2xl font-bold text-white text-center mb-4">Post-Construction</h3> <p class="text-gray-300 text-center mb-6">
+                            Thorough cleanup after renovations or construction projects to make your space move-in ready. </p>
                         <ul class="space-y-3 mb-8">
                             <li class="flex items-center">
-                                <i class="fas fa-check text-accent-orange mr-3"></i>
-                                <span>Dusting and vacuuming</span>
-                            </li>
+                                <i class="fas fa-check text-accent-blue mr-3"></i>
+                                <span>Debris and dust removal</span> </li>
                             <li class="flex items-center">
-                                <i class="fas fa-check text-accent-orange mr-3"></i>
-                                <span>Kitchen and bathroom sanitization</span>
-                            </li>
+                                <i class="fas fa-check text-accent-blue mr-3"></i>
+                                <span>Surface and window cleaning</span> </li>
                             <li class="flex items-center">
-                                <i class="fas fa-check text-accent-orange mr-3"></i>
-                                <span>Floor mopping and polishing</span>
-                            </li>
+                                <i class="fas fa-check text-accent-blue mr-3"></i>
+                                <span>Final polish and sanitization</span> </li>
                         </ul>
-                        <a href="#contact" class="block w-full py-3 text-center bg-transparent border border-accent-orange text-accent-orange font-semibold rounded-lg hover:bg-accent-orange hover:text-white transition-all">
+                        <a href="#contact" class="block w-full py-3 text-center bg-transparent border border-accent-blue text-accent-blue font-semibold rounded-lg hover:bg-accent-blue hover:text-white transition-all">
                             Request Quote
                         </a>
                     </div>
                     
-                    <!-- Card 2: Commercial Cleaning -->
-                    <div class="service-card bg-[#1a1a1a] rounded-xl p-8 border border-gray-800 hover:border-accent-orange transition-all duration-500 fade-in-up" style="animation-delay: 0.2s">
-                        <div class="w-16 h-16 bg-accent-orange rounded-full flex items-center justify-center mb-6 mx-auto">
+                    <div class="service-card bg-[#1a1a1a] rounded-xl p-8 border border-gray-800 hover:border-accent-blue transition-all duration-500 fade-in-up" style="animation-delay: 0.2s">
+                        <div class="w-16 h-16 bg-accent-blue rounded-full flex items-center justify-center mb-6 mx-auto">
                             <i class="fas fa-building text-white text-2xl"></i>
                         </div>
                         <h3 class="text-2xl font-bold text-white text-center mb-4">Commercial & Office</h3>
@@ -583,26 +522,25 @@
                         </p>
                         <ul class="space-y-3 mb-8">
                             <li class="flex items-center">
-                                <i class="fas fa-check text-accent-orange mr-3"></i>
+                                <i class="fas fa-check text-accent-blue mr-3"></i>
                                 <span>Office space cleaning</span>
                             </li>
                             <li class="flex items-center">
-                                <i class="fas fa-check text-accent-orange mr-3"></i>
+                                <i class="fas fa-check text-accent-blue mr-3"></i>
                                 <span>Restroom sanitization</span>
                             </li>
                             <li class="flex items-center">
-                                <i class="fas fa-check text-accent-orange mr-3"></i>
+                                <i class="fas fa-check text-accent-blue mr-3"></i>
                                 <span>Common area maintenance</span>
                             </li>
                         </ul>
-                        <a href="#contact" class="block w-full py-3 text-center bg-transparent border border-accent-orange text-accent-orange font-semibold rounded-lg hover:bg-accent-orange hover:text-white transition-all">
+                        <a href="#contact" class="block w-full py-3 text-center bg-transparent border border-accent-blue text-accent-blue font-semibold rounded-lg hover:bg-accent-blue hover:text-white transition-all">
                             Request Quote
                         </a>
                     </div>
                     
-                    <!-- Card 3: Deep Cleaning -->
-                    <div class="service-card bg-[#1a1a1a] rounded-xl p-8 border border-gray-800 hover:border-accent-orange transition-all duration-500 fade-in-up" style="animation-delay: 0.3s">
-                        <div class="w-16 h-16 bg-accent-orange rounded-full flex items-center justify-center mb-6 mx-auto">
+                    <div class="service-card bg-[#1a1a1a] rounded-xl p-8 border border-gray-800 hover:border-accent-blue transition-all duration-500 fade-in-up" style="animation-delay: 0.3s">
+                        <div class="w-16 h-16 bg-accent-blue rounded-full flex items-center justify-center mb-6 mx-auto">
                             <i class="fas fa-spray-can-sparkles text-white text-2xl"></i>
                         </div>
                         <h3 class="text-2xl font-bold text-white text-center mb-4">Deep Cleaning</h3>
@@ -611,71 +549,40 @@
                         </p>
                         <ul class="space-y-3 mb-8">
                             <li class="flex items-center">
-                                <i class="fas fa-check text-accent-orange mr-3"></i>
+                                <i class="fas fa-check text-accent-blue mr-3"></i>
                                 <span>Grout and tile cleaning</span>
                             </li>
                             <li class="flex items-center">
-                                <i class="fas fa-check text-accent-orange mr-3"></i>
+                                <i class="fas fa-check text-accent-blue mr-3"></i>
                                 <span>Appliance deep cleaning</span>
                             </li>
                             <li class="flex items-center">
-                                <i class="fas fa-check text-accent-orange mr-3"></i>
+                                <i class="fas fa-check text-accent-blue mr-3"></i>
                                 <span>Window and blind cleaning</span>
                             </li>
                         </ul>
-                        <a href="#contact" class="block w-full py-3 text-center bg-transparent border border-accent-orange text-accent-orange font-semibold rounded-lg hover:bg-accent-orange hover:text-white transition-all">
+                        <a href="#contact" class="block w-full py-3 text-center bg-transparent border border-accent-blue text-accent-blue font-semibold rounded-lg hover:bg-accent-blue hover:text-white transition-all">
                             Request Quote
                         </a>
                     </div>
                 </div>
                 
-                <!-- Additional Services -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-                    <div class="bg-[#1a1a1a] rounded-xl p-8 border border-gray-800 fade-in-up" style="animation-delay: 0.4s">
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-accent-orange rounded-lg flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-tint text-white text-xl"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-xl font-bold text-white mb-2">Carpet & Upholstery Cleaning</h4>
-                                <p class="text-gray-300">Professional deep cleaning for carpets, rugs, and furniture to remove stains and allergens.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-[#1a1a1a] rounded-xl p-8 border border-gray-800 fade-in-up" style="animation-delay: 0.5s">
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-accent-orange rounded-lg flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-wind text-white text-xl"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-xl font-bold text-white mb-2">Post-Construction Cleaning</h4>
-                                <p class="text-gray-300">Thorough cleanup after renovations or construction projects to make your space move-in ready.</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </div>
         </section>
 
-        <!-- 
-          Section: Portfolio / Before & After
-        -->
         <section id="portfolio" class="py-24 px-6 md:px-12 lg:px-24 bg-[#111111] relative overflow-hidden">
-            <!-- Background Pattern -->
             <div class="absolute inset-0 opacity-5">
-                <div class="absolute top-1/4 left-1/4 w-48 h-48 bg-accent-orange rounded-full blur-3xl"></div>
-                <div class="absolute bottom-1/4 right-1/4 w-48 h-48 bg-accent-orange rounded-full blur-3xl"></div>
+                <div class="absolute top-1/4 left-1/4 w-48 h-48 bg-accent-blue rounded-full blur-3xl"></div>
+                <div class="absolute bottom-1/4 right-1/4 w-48 h-48 bg-accent-blue rounded-full blur-3xl"></div>
             </div>
             
             <div class="max-w-7xl mx-auto relative z-10">
                 <div class="text-center mb-16 fade-in-up">
-                    <h2 class="text-sm font-semibold text-accent-orange uppercase tracking-widest">Our Work</h2>
-                    <div class="orange-line mx-auto mt-2"></div>
+                    <h2 class="text-sm font-semibold text-accent-blue uppercase tracking-widest">Our Work</h2>
+                    <div class="blue-line mx-auto mt-2"></div>
                     <p class="text-gray-300 mt-6 max-w-2xl mx-auto">See the transformation with our before and after cleaning projects that showcase our attention to detail and quality results.</p>
                 </div>
                 
-                <!-- Before/After Slider -->
                 <div class="max-w-4xl mx-auto mb-16 fade-in-up" style="animation-delay: 0.2s">
                     <div class="ba-slider rounded-xl overflow-hidden shadow-2xl">
                         <img src="img1.png" alt="Before cleaning">
@@ -686,7 +593,6 @@
                     </div>
                 </div>
                 
-                <!-- Portfolio Grid -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="group relative overflow-hidden rounded-xl fade-in-up" style="animation-delay: 0.3s">
                         <img src="img3.png" alt="Office Cleaning" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
@@ -721,28 +627,22 @@
             </div>
         </section>
         
-        <!-- 
-          Section: Testimonials
-        -->
         <section id="testimonials" class="py-24 px-6 md:px-12 lg:px-24 relative overflow-hidden">
-            <!-- Background Pattern -->
             <div class="absolute inset-0 bg-gradient-to-b from-[#0c0c0c] to-[#111111]"></div>
             
             <div class="max-w-7xl mx-auto relative z-10">
                 <div class="text-center mb-16 fade-in-up">
-                    <h2 class="text-sm font-semibold text-accent-orange uppercase tracking-widest">Testimonials</h2>
-                    <div class="orange-line mx-auto mt-2"></div>
+                    <h2 class="text-sm font-semibold text-accent-blue uppercase tracking-widest">Testimonials</h2>
+                    <div class="blue-line mx-auto mt-2"></div>
                     <p class="text-gray-300 mt-6 max-w-2xl mx-auto">Hear what our satisfied clients have to say about our cleaning services and customer experience.</p>
                 </div>
                 
-                <!-- Testimonial Carousel -->
                 <div class="testimonial-carousel max-w-4xl mx-auto fade-in-up" style="animation-delay: 0.2s">
                     <div class="testimonial-track" id="testimonial-track">
-                        <!-- Testimonial 1 -->
                         <div class="testimonial-slide">
                             <div class="bg-[#1a1a1a] rounded-xl p-8 border border-gray-800">
                                 <div class="flex items-center mb-6">
-                                    <div class="w-16 h-16 bg-accent-orange rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                                    <div class="w-16 h-16 bg-accent-blue rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
                                         JD
                                     </div>
                                     <div>
@@ -763,11 +663,10 @@
                             </div>
                         </div>
                         
-                        <!-- Testimonial 2 -->
                         <div class="testimonial-slide">
                             <div class="bg-[#1a1a1a] rounded-xl p-8 border border-gray-800">
                                 <div class="flex items-center mb-6">
-                                    <div class="w-16 h-16 bg-accent-orange rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                                    <div class="w-16 h-16 bg-accent-blue rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
                                         SJ
                                     </div>
                                     <div>
@@ -788,11 +687,10 @@
                             </div>
                         </div>
                         
-                        <!-- Testimonial 3 -->
                         <div class="testimonial-slide">
                             <div class="bg-[#1a1a1a] rounded-xl p-8 border border-gray-800">
                                 <div class="flex items-center mb-6">
-                                    <div class="w-16 h-16 bg-accent-orange rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
+                                    <div class="w-16 h-16 bg-accent-blue rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">
                                         MR
                                     </div>
                                     <div>
@@ -814,18 +712,16 @@
                         </div>
                     </div>
                     
-                    <!-- Carousel Controls -->
                     <div class="flex justify-center mt-8 space-x-4">
-                        <button id="testimonial-prev" class="w-12 h-12 bg-[#1a1a1a] border border-gray-800 rounded-full flex items-center justify-center text-white hover:bg-accent-orange transition-colors">
+                        <button id="testimonial-prev" class="w-12 h-12 bg-[#1a1a1a] border border-gray-800 rounded-full flex items-center justify-center text-white hover:bg-accent-blue transition-colors">
                             <i class="fas fa-chevron-left"></i>
                         </button>
-                        <button id="testimonial-next" class="w-12 h-12 bg-[#1a1a1a] border border-gray-800 rounded-full flex items-center justify-center text-white hover:bg-accent-orange transition-colors">
+                        <button id="testimonial-next" class="w-12 h-12 bg-[#1a1a1a] border border-gray-800 rounded-full flex items-center justify-center text-white hover:bg-accent-blue transition-colors">
                             <i class="fas fa-chevron-right"></i>
                         </button>
                     </div>
                 </div>
                 
-                <!-- Stats Section -->
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16">
                     <div class="text-center fade-in-up" style="animation-delay: 0.3s">
                         <div class="text-4xl md:text-5xl font-bold text-white mb-2 gradient-text">500+</div>
@@ -847,23 +743,18 @@
             </div>
         </section>
 
-        <!-- 
-          Section: Contact
-        -->
         <section id="contact" class="py-24 px-6 md:px-12 lg:px-24 bg-[#111111] relative overflow-hidden">
-            <!-- Background Pattern -->
             <div class="absolute inset-0 opacity-5">
-                <div class="absolute top-0 right-0 w-64 h-64 bg-accent-orange rounded-full blur-3xl"></div>
-                <div class="absolute bottom-0 left-0 w-64 h-64 bg-accent-orange rounded-full blur-3xl"></div>
+                <div class="absolute top-0 right-0 w-64 h-64 bg-accent-blue rounded-full blur-3xl"></div>
+                <div class="absolute bottom-0 left-0 w-64 h-64 bg-accent-blue rounded-full blur-3xl"></div>
             </div>
             
             <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10">
-                <!-- Info Column -->
                 <div class="fade-in-up">
                     <h2 class="text-4xl font-bold text-white uppercase mb-8">Contact Us</h2>
                     <div class="space-y-6">
                         <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-accent-orange rounded-lg flex items-center justify-center flex-shrink-0">
+                            <div class="w-12 h-12 bg-accent-blue rounded-lg flex items-center justify-center flex-shrink-0">
                                 <i class="fas fa-envelope text-white text-xl"></i>
                             </div>
                             <div>
@@ -873,7 +764,7 @@
                         </div>
                         
                         <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-accent-orange rounded-lg flex items-center justify-center flex-shrink-0">
+                            <div class="w-12 h-12 bg-accent-blue rounded-lg flex items-center justify-center flex-shrink-0">
                                 <i class="fas fa-phone text-white text-xl"></i>
                             </div>
                             <div>
@@ -883,7 +774,7 @@
                         </div>
                         
                         <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-accent-orange rounded-lg flex items-center justify-center flex-shrink-0">
+                            <div class="w-12 h-12 bg-accent-blue rounded-lg flex items-center justify-center flex-shrink-0">
                                 <i class="fas fa-clock text-white text-xl"></i>
                             </div>
                             <div>
@@ -893,7 +784,7 @@
                         </div>
                         
                         <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 bg-accent-orange rounded-lg flex items-center justify-center flex-shrink-0">
+                            <div class="w-12 h-12 bg-accent-blue rounded-lg flex items-center justify-center flex-shrink-0">
                                 <i class="fas fa-map-marker-alt text-white text-xl"></i>
                             </div>
                             <div>
@@ -905,13 +796,13 @@
                         <div class="pt-6">
                             <h4 class="text-lg font-semibold text-gray-200 mb-4">Follow Us</h4>
                             <div class="flex space-x-4">
-                                <a href="#" class="w-10 h-10 bg-[#1a1a1a] border border-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-accent-orange hover:text-white transition-all">
+                                <a href="#" class="w-10 h-10 bg-[#1a1a1a] border border-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-accent-blue hover:text-white transition-all">
                                     <i class="fab fa-instagram"></i>
                                 </a>
-                                <a href="#" class="w-10 h-10 bg-[#1a1a1a] border border-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-accent-orange hover:text-white transition-all">
+                                <a href="#" class="w-10 h-10 bg-[#1a1a1a] border border-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-accent-blue hover:text-white transition-all">
                                     <i class="fab fa-linkedin"></i>
                                 </a>
-                                <a href="#" class="w-10 h-10 bg-[#1a1a1a] border border-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-accent-orange hover:text-white transition-all">
+                                <a href="#" class="w-10 h-10 bg-[#1a1a1a] border border-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-accent-blue hover:text-white transition-all">
                                     <i class="fab fa-facebook"></i>
                                 </a>
                             </div>
@@ -919,7 +810,6 @@
                     </div>
                 </div>
                 
-                <!-- Form Column -->
                 <div class="fade-in-up" style="animation-delay: 0.2s">
                     <h2 class="text-4xl font-bold text-white uppercase mb-8">Request a Quote</h2>
                     <form action="#" method="POST" id="quote-form" class="space-y-6">
@@ -947,10 +837,8 @@
                             <label for="service-type" class="block text-sm font-medium text-gray-300 mb-2">Service Type</label>
                             <select name="service-type" id="service-type" class="dark-input">
                                 <option value="">Select a service</option>
-                                <option value="residential">Residential Cleaning</option>
                                 <option value="commercial">Commercial & Office</option>
                                 <option value="deep">Deep Cleaning</option>
-                                <option value="carpet">Carpet & Upholstery</option>
                                 <option value="construction">Post-Construction</option>
                                 <option value="other">Other</option>
                             </select>
@@ -960,10 +848,8 @@
                             <textarea name="project-details" id="project-details" rows="5" required class="dark-input"></textarea>
                         </div>
                         
-                        <!-- AI Feature Button -->
                         <div class="-mt-2">
-                            <button type="button" id="refine-project-button" class="flex items-center space-x-2 text-sm font-semibold text-accent-orange disabled:text-gray-500 disabled:cursor-not-allowed transition-colors" disabled>
-                                <!-- Spinner Icon (hidden by default) -->
+                            <button type="button" id="refine-project-button" class="flex items-center space-x-2 text-sm font-semibold text-accent-blue disabled:text-gray-500 disabled:cursor-not-allowed transition-colors" disabled>
                                 <i id="refine-spinner" class="fas fa-spinner spinning hidden"></i>
                                 <span id="refine-button-text">✨ Refine Project Description</span>
                             </button>
@@ -971,7 +857,7 @@
                         </div>
                         
                         <div>
-                            <button type="submit" class="px-8 py-3 bg-accent-orange text-white font-semibold text-sm rounded-md hover-bg-accent-orange transition-all transform hover:scale-105 shadow-lg w-full">
+                            <button type="submit" class="px-8 py-3 bg-accent-blue text-white font-semibold text-sm rounded-md hover-bg-accent-blue transition-all transform hover:scale-105 shadow-lg w-full">
                                 <i class="fas fa-paper-plane mr-2"></i>SUBMIT REQUEST
                             </button>
                         </div>
@@ -979,7 +865,6 @@
                 </div>
             </div>
             
-            <!-- Footer Copyright -->
             <div class="max-w-7xl mx-auto border-t border-gray-800 mt-24 pt-8 text-center text-gray-500">
                 <p>Daze Nettoyage © 2024. All rights reserved.</p>
             </div>
@@ -987,18 +872,15 @@
 
     </main>
 
-    <!-- AI Suggestion Modal -->
     <div id="ai-suggestion-modal" class="fixed inset-0 z-[100] bg-black/70 flex items-center justify-center p-4 hidden">
         <div class="bg-[#1a1a1a] border border-gray-700 rounded-lg max-w-2xl w-full p-6 shadow-2xl glass">
-            <!-- Modal Loading State -->
             <div id="modal-loading-state" class="hidden">
                 <div class="flex flex-col items-center justify-center min-h-[200px]">
-                    <i class="fas fa-spinner spinning text-accent-orange text-4xl mb-4"></i>
+                    <i class="fas fa-spinner spinning text-accent-blue text-4xl mb-4"></i>
                     <p class="text-white mt-4 text-lg">Refining your description...</p>
                 </div>
             </div>
             
-            <!-- Modal Content State -->
             <div id="modal-content-state">
                 <h2 class="text-2xl font-bold text-white mb-4">✨ Project Suggestion</h2>
                 <div class="space-y-4">
@@ -1007,7 +889,7 @@
                         <p id="original-text-display" class="bg-[#0c0c0c] border border-gray-600 rounded-md p-3 text-gray-300 max-h-32 overflow-y-auto"></p>
                     </div>
                     <div>
-                        <h3 class="text-sm font-semibold text-accent-orange uppercase tracking-wider mb-2">AI-Refined Suggestion</h3>
+                        <h3 class="text-sm font-semibold text-accent-blue uppercase tracking-wider mb-2">AI-Refined Suggestion</h3>
                         <p id="refined-text-display" class="bg-[#0c0c0c] border border-gray-600 rounded-md p-3 text-white max-h-48 overflow-y-auto"></p>
                     </div>
                     <p id="modal-error-message" class="text-red-400 text-sm hidden"></p>
@@ -1016,7 +898,7 @@
                     <button id="cancel-ai-button" type="button" class="px-6 py-2 rounded-md text-gray-300 bg-gray-700 hover:bg-gray-600 transition-colors">
                         Cancel
                     </button>
-                    <button id="use-ai-button" type="button" class="px-6 py-2 rounded-md text-white bg-accent-orange hover:bg-orange-700 transition-colors">
+                    <button id="use-ai-button" type="button" class="px-6 py-2 rounded-md text-white bg-accent-blue hover:bg-blue-700 transition-colors">
                         Use Refined Version
                     </button>
                 </div>
@@ -1024,12 +906,10 @@
         </div>
     </div>
 
-    <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-accent-orange text-white rounded-full flex items-center justify-center shadow-lg hover-bg-accent-orange transition-all transform hover:scale-110 z-40 hidden">
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-accent-blue text-white rounded-full flex items-center justify-center shadow-lg hover-bg-accent-blue transition-all transform hover:scale-110 z-40 hidden">
         <i class="fas fa-chevron-up"></i>
     </button>
 
-    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -1180,25 +1060,25 @@
                 updateCarousel();
             }, 5000);
 
-            // Initialize Particles.js with orange theme
+            // Initialize Particles.js with blue bubble theme [MODIFIED]
             particlesJS('particles-js', {
                 particles: {
-                    number: { value: 80, density: { enable: true, value_area: 800 } },
-                    color: { value: "#F97316" },
+                    number: { value: 50, density: { enable: true, value_area: 800 } }, // Fewer particles
+                    color: { value: "#2563EB" }, // Blue color
                     shape: { type: "circle" },
-                    opacity: { value: 0.5, random: true },
-                    size: { value: 3, random: true },
+                    opacity: { value: 0.3, random: true }, // More transparent
+                    size: { value: 5, random: true }, // Bigger bubbles
                     line_linked: {
-                        enable: true,
+                        enable: false, // *** Lines disabled ***
                         distance: 150,
-                        color: "#F97316",
+                        color: "#2563EB",
                         opacity: 0.2,
                         width: 1
                     },
                     move: {
                         enable: true,
-                        speed: 2,
-                        direction: "none",
+                        speed: 1.5, // Slower
+                        direction: "top", // Move up
                         random: true,
                         straight: false,
                         out_mode: "out",
